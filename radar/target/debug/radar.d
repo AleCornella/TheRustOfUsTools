@@ -1,1 +1,1 @@
-/home/redi/uni/rust/TheRustOfUsTools/radar/target/debug/radar: /home/redi/uni/rust/TheRustOfUsTools/radar/src/main.rs
+/home/windows7/Documenti/Silvio/scuola/Uni/Corsi/Advanced\ Programming/Progetto/TheRustOfUsTools/radar/target/debug/radar: /home/windows7/Documenti/Silvio/scuola/Uni/Corsi/Advanced\ Programming/Progetto/TheRustOfUsTools/radar/src/main.rs

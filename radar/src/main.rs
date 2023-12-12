@@ -53,12 +53,43 @@ pub enum RadarError {
     MustDestroyContentFirst,
     UndefinedError,
 }
+/// Given the: robot, world, direction, distance, state and TileType, it will return the coordinates of the closest tile of TileType.
+/// The tool will search in a rectangle of 3 x distance, starting from you position and the two tiles in your sides.
+///
+/// #Usage
+///```
+/// Todo
+///
+/// #Arguments
+/// - `robot`: The robot
+/// - `world`: The world
+/// - `direction`: The direction in wkich the robot is looking 
+/// - `distance`: How long you want to search
+///
+/// #Returns
+/// -`(Tile, usize, usize)`:returns the tile and it's own coordinates (row and columns)
+/// -`LibError`: The error that ocurred
+///
+/// #Errors
+/// - `NotEnoughEnergy`: The robot doesn't have enough energy to see the tile
+/// - `NoContent`: The tile you are looking for doesn't exist there
+/// - `OutOfBounds`: You tried to look for a tile which is outside of the world
+///
+/// #Examples
+///```rust
+/// use robotics_lib::interface::one_direction_view;
+/// use robotics_lib::runner::Runnable;
+/// use robotics_lib::world::World;
+/// use robotics_lib::world::tile::Tile;
+/// use robotics_lib::interface::Direction;
+/// use //Todo(Where is implemented the tool)
+///
+/// Todo
 impl Tool {
     pub fn radar(
         robot: &mut impl Runnable,
         world: &mut World,
         direction: Direction,
-        state: State,
         distance: usize,
         tile_type: TileType,
     ) -> Result<(Tile, usize, usize), LibError> {
